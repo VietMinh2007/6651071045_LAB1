@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MINH CARDS - Cửa hàng Thẻ bài Pokémon">
+    <meta name="keywords" content="Pokemon, Thẻ bài Pokemon, Cửa hàng, Shop Grid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cửa Hàng Thẻ Bài | MINH CARDS</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="index.html"><img src="Images/logo.png" alt="MINH CARDS"></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="wishlist.html"><i class="fa fa-heart"></i> <span class="header-wishlist-count">0</span></a></li>
+                <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="header-cart-count">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng: <span class="header-cart-price-total">0đ</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="Images/language.png" alt="VN">
+                <div>Tiếng Việt</div>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="login.html"><i class="fa fa-user"></i> Đăng nhập</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li class="active"><a href="shop-grid.html">Cửa hàng</a></li>
+                <li><a href="#">Trang</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="shop-details.html?id=1">Chi tiết thẻ bài</a></li>
+                        <li><a href="shoping-cart.html">Giỏ hàng</a></li>
+                        <li><a href="checkout.html">Thanh toán</a></li>
+                        <li><a href="orders.html">Lịch sử đơn hàng</a></li>
+                        <li><a href="wishlist.html">Yêu thích</a></li>
+                        <li><a href="blog-details.html?id=1">Chi tiết blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> huynhminh2007tgdd@gmail.com</li>
+                <li>Miễn phí vận chuyển cho đơn từ 500.000đ</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> huynhminh2007tgdd@gmail.com</li>
+                                <li>Miễn phí vận chuyển cho đơn từ 500.000đ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="Images/language.png" alt="VN">
+                                <div>Tiếng Việt</div>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="login.html"><i class="fa fa-user"></i> Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="Images/logo.png" alt="MINH CARDS"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li class="active"><a href="shop-grid.html">Cửa hàng</a></li>
+                            <li><a href="#">Trang</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="shop-details.html?id=1">Chi tiết thẻ bài</a></li>
+                                    <li><a href="shoping-cart.html">Giỏ hàng</a></li>
+                                    <li><a href="checkout.html">Thanh toán</a></li>
+                                    <li><a href="orders.html">Lịch sử đơn hàng</a></li>
+                                    <li><a href="wishlist.html">Yêu thích</a></li>
+                                    <li><a href="blog-details.html?id=1">Chi tiết blog</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="wishlist.html"><i class="fa fa-heart"></i> <span class="header-wishlist-count">0</span></a></li>
+                            <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="header-cart-count">0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Tổng: <span class="header-cart-price-total">0đ</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="Images/breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Cửa Hàng Thẻ Bài Pokémon</h2>
+                        <div class="breadcrumb__option">
+                            <a href="index.html">Trang chủ</a>
+                            <span>Cửa hàng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar bộ lọc bên trái -->
+                <div class="col-lg-3 col-md-5">
+                    <div class="sidebar">
+                        <!-- Danh mục Thế Hệ (Gen 1 - Gen 9) -->
+                        <div class="sidebar__item">
+                            <h4>Thế Hệ Pokémon</h4>
+                            <ul id="gen-filter-list">
+                                <li><a href="javascript:void(0)" class="filter-gen active" data-gen="all">Tất cả thế hệ (Gen 1 - 9)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-gen" data-gen="Gen 1">Gen 1 - Kanto (1996)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-gen" data-gen="Gen 2">Gen 2 - Johto (1999)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-gen" data-gen="Gen 3">Gen 3 - Hoenn (2002)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-gen" data-gen="Gen 4">Gen 4 - Sinnoh (2006)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-gen" data-gen="Gen 5">Gen 5 - Unova (2010)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-gen" data-gen="Gen 6">Gen 6 - Kalos (2013)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-gen" data-gen="Gen 7">Gen 7 - Alola (2016)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-gen" data-gen="Gen 8">Gen 8 - Galar (2019)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-gen" data-gen="Gen 9">Gen 9 - Paldea (2022)</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Danh mục Độ hiếm -->
+                        <div class="sidebar__item">
+                            <h4>Độ Hiếm Thẻ</h4>
+                            <ul id="rarity-filter-list">
+                                <li><a href="javascript:void(0)" class="filter-rarity active" data-rarity="all">Tất cả độ hiếm</a></li>
+                                <li><a href="javascript:void(0)" class="filter-rarity" data-rarity="Secret Rare">Secret Rare (Cực hiếm)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-rarity" data-rarity="Ultra Rare">Ultra Rare</a></li>
+                                <li><a href="javascript:void(0)" class="filter-rarity" data-rarity="Rare">Rare (Holo hiếm)</a></li>
+                                <li><a href="javascript:void(0)" class="filter-rarity" data-rarity="Uncommon">Uncommon</a></li>
+                                <li><a href="javascript:void(0)" class="filter-rarity" data-rarity="Common">Common</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Lọc theo khoảng giá -->
+                        <div class="sidebar__item">
+                            <h4>Khoảng Giá (VNĐ)</h4>
+                            <div class="price-range-wrap">
+                                <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                                    id="price-slider" data-min="0" data-max="40000000">
+                                    <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+                                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                </div>
+                                <div class="range-slider mt-3">
+                                    <div class="price-input" style="font-size: 14px; color: #1c1c1c; font-weight: 700;">
+                                        <span id="minamount">0đ</span> - <span id="maxamount">40.000.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bộ thẻ (Sets) -->
+                        <div class="sidebar__item">
+                            <h4>Bộ Sưu Tập (Set)</h4>
+                            <div class="sidebar__item__size" id="set-filter-container">
+                                <label for="set-all" class="active">
+                                    Tất cả
+                                    <input type="radio" name="set-radio" id="set-all" value="all" checked>
+                                </label>
+                                <label for="set-base">
+                                    Base Set
+                                    <input type="radio" name="set-radio" id="set-base" value="Base Set 1999">
+                                </label>
+                                <label for="set-ev">
+                                    Evolving Skies
+                                    <input type="radio" name="set-radio" id="set-ev" value="Evolving Skies">
+                                </label>
+                                <label for="set-sf">
+                                    Shining Fates
+                                    <input type="radio" name="set-radio" id="set-sf" value="Shining Fates">
+                                </label>
+                                <label for="set-fs">
+                                    Fusion Strike
+                                    <input type="radio" name="set-radio" id="set-fs" value="Fusion Strike">
+                                </label>
+                                <label for="set-bs">
+                                    Brilliant Stars
+                                    <input type="radio" name="set-radio" id="set-bs" value="Brilliant Stars">
+                                </label>
+                                <label for="set-lo">
+                                    Lost Origin
+                                    <input type="radio" name="set-radio" id="set-lo" value="Lost Origin">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Nút Xoá Bộ Lọc -->
+                        <div class="sidebar__item">
+                            <button type="button" id="btn-reset-filters" class="site-btn" style="width: 100%; background: #6c757d; padding: 10px 15px;">
+                                <i class="fa fa-refresh"></i> XÓA BỘ LỌC
+                            </button>
+                        </div>
+
+                        <!-- Sản phẩm mới (Mini list) -->
+                        <div class="sidebar__item">
+                            <div class="latest-product__text">
+                                <h4>Thẻ Mới Về</h4>
+                                <div class="latest-product__slider owl-carousel" id="sidebar-latest-products">
+                                    <!-- JS Render -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lưới sản phẩm bên phải -->
+                <div class="col-lg-9 col-md-7">
+                    <!-- Banner giảm giá đầu trang shop -->
+                    <div class="product__discount">
+                        <div class="section-title product__discount__title">
+                            <h2>Ưu Đãi Đặc Biệt</h2>
+                        </div>
+                        <div class="row">
+                            <div class="product__discount__slider owl-carousel" id="discount-cards-slider">
+                                <!-- JS render các thẻ có giảm giá -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thanh điều khiển sắp xếp & đếm kết quả -->
+                    <div class="filter__item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5">
+                                <div class="filter__sort">
+                                    <span>Sắp xếp:</span>
+                                    <select id="sort-by-select">
+                                        <option value="default">Mặc định</option>
+                                        <option value="price-asc">Giá: Thấp đến Cao</option>
+                                        <option value="price-desc">Giá: Cao đến Thấp</option>
+                                        <option value="name-asc">Tên: A - Z</option>
+                                        <option value="popular">Bán chạy nhất</option>
+                                        <option value="newest">Mới nhất</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-4 text-center">
+                                <div class="filter__found">
+                                    <h6>Tìm thấy <span id="products-count-num">0</span> thẻ bài</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 text-right">
+                                <div class="filter__option">
+                                    <span class="icon_grid-2x2 fa fa-th" title="Dạng lưới"></span>
+                                    <span class="icon_ul fa fa-bars" title="Dạng danh sách"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Active filters preview tags -->
+                        <div id="active-filter-tags" style="margin-top: 10px;"></div>
+                    </div>
+
+                    <!-- Danh sách thẻ bài -->
+                    <div class="row" id="shop-products-grid">
+                        <!-- JS render danh sách thẻ bài -->
+                    </div>
+
+                    <!-- Phân trang -->
+                    <div class="product__pagination" id="shop-pagination" style="text-align: center; margin-top: 25px;">
+                        <!-- JS Render phân trang -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="index.html"><img src="Images/logo.png" alt="MINH CARDS"></a>
+                        </div>
+                        <ul>
+                            <li><strong>Địa chỉ:</strong> 450 Lê Văn Việt, Tăng Nhơn Phú A, TP. Thủ Đức, TP.HCM</li>
+                            <li><strong>Điện thoại:</strong> +84 947.546.292</li>
+                            <li><strong>Email:</strong> huynhminh2007tgdd@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Liên kết hữu ích</h6>
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="shop-grid.html">Cửa hàng thẻ bài</a></li>
+                            <li><a href="blog.html">Tin tức & Mẹo chơi</a></li>
+                            <li><a href="contact.html">Liên hệ hỗ trợ</a></li>
+                            <li><a href="orders.html">Tra cứu đơn hàng</a></li>
+                            <li><a href="wishlist.html">Thẻ yêu thích</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Đăng ký nhận tin tức mới</h6>
+                        <p>Nhận thông báo sớm nhất về các đợt mở hộp Booster Box và thẻ bài giảm giá sốc.</p>
+                        <form onsubmit="event.preventDefault(); showToast('Cảm ơn bạn đã đăng ký nhận bản tin MINH CARDS!', 'success'); this.reset();">
+                            <input type="email" placeholder="Nhập địa chỉ email của bạn" required>
+                            <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                                                <div class="footer__copyright__text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true" style="color: #ee1515;"></i> by Việt Minh</p>
+                        </div>
+                        <div class="footer__copyright__payment">
+                            <img src="Images/payment-item.png" alt="Phương thức thanh toán">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <!-- PokéCard Scripts -->
+    <script src="Scripts/data.js"></script>
+    <script src="Scripts/auth.js"></script>
+    <script src="Scripts/cart.js"></script>
+    <script src="Scripts/wishlist.js"></script>
+    <script src="Scripts/products.js"></script>
+    <script src="Scripts/orders.js"></script>
+    <script src="Scripts/ui.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#preloder").fadeOut();
+            $(".loader").fadeOut();
+            $("select").niceSelect();
+
+            $(".mobile-menu").slicknav({
+                prependTo: '#mobile-menu-wrap',
+                allowParentLinks: true
+            });
+
+            // Bộ nhớ trạng thái lọc hiện tại
+            var urlParams = new URLSearchParams(window.location.search);
+            var currentFilters = {
+                keyword: urlParams.get("search") || "",
+                generation: urlParams.get("gen") || "all",
+                rarity: urlParams.get("rarity") || "all",
+                set: urlParams.get("set") || "all",
+                minPrice: 0,
+                maxPrice: 40000000,
+                sortBy: "default",
+                page: 1,
+                pageSize: 9
+            };
+
+            // Khởi tạo jQuery UI Price Slider
+            $("#price-slider").slider({
+                range: true,
+                min: 0,
+                max: 40000000,
+                step: 200000,
+                values: [0, 40000000],
+                slide: function (event, ui) {
+                    $("#minamount").text(formatVND(ui.values[0]));
+                    $("#maxamount").text(formatVND(ui.values[1]));
+                },
+                change: function (event, ui) {
+                    currentFilters.minPrice = ui.values[0];
+                    currentFilters.maxPrice = ui.values[1];
+                    currentFilters.page = 1;
+                    applyFilterAndRender();
+                }
+            });
+
+            // Ưu Đãi Đặc Biệt Slider (Cards có originalPrice)
+            var discountCards = getProducts().filter(p => p.originalPrice && p.originalPrice > p.price);
+            var discountHtml = "";
+            discountCards.forEach(function(p) {
+                var percentOff = Math.round((1 - p.price / p.originalPrice) * 100);
+                var isWished = isInWishlist(p.id);
+                discountHtml += `
+                    <div class="col-lg-4">
+                        <div class="product__discount__item">
+                            <div class="product__discount__item__pic set-bg" data-setbg="${p.image}" style="background-image: url('${p.image}'); height: 270px; border-radius: 6px; border: 1px solid #eee;">
+                                <div class="product__discount__percent">-${percentOff}%</div>
+                                <ul class="product__item__pic__hover">
+                                    <li><a href="javascript:void(0)" class="wishlist-btn ${isWished ? 'active' : ''}" data-id="${p.id}"><i class="${isWished ? 'fa fa-heart' : 'fa fa-heart-o'}" style="${isWished ? 'color: #ee1515;' : ''}"></i></a></li>
+                                    <li><a href="shop-details.html?id=${p.id}"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="javascript:void(0)" class="add-to-cart-btn" data-id="${p.id}"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__discount__item__text" style="padding-top: 15px;">
+                                <span>${p.set}</span>
+                                <h5><a href="shop-details.html?id=${p.id}">${p.name}</a></h5>
+                                <div class="product__item__price">${formatVND(p.price)} <span>${formatVND(p.originalPrice)}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            $("#discount-cards-slider").html(discountHtml);
+
+            $("#discount-cards-slider").owlCarousel({
+                loop: true,
+                margin: 0,
+                items: 3,
+                dots: true,
+                smartSpeed: 1200,
+                autoHeight: false,
+                autoplay: true,
+                responsive: {
+                    0: { items: 1 },
+                    576: { items: 2 },
+                    992: { items: 3 }
+                }
+            });
+
+            // Sidebar Mini Slider
+            var latestProducts = getProducts().slice(0, 6);
+            var sideSlideHtml = '<div class="latest-prdouct__slider__item">';
+            latestProducts.slice(0, 3).forEach(function(p) {
+                sideSlideHtml += `
+                    <a href="shop-details.html?id=${p.id}" class="latest-product__item">
+                        <div class="latest-product__item__pic" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid #eee; border-radius: 4px; padding: 4px;">
+                            <img src="${p.image}" alt="${p.name}" style="max-height: 70px; object-fit: contain;">
+                        </div>
+                        <div class="latest-product__item__text" style="padding-left: 12px;">
+                            <h6>${p.name}</h6>
+                            <span style="color: #ee1515; font-weight: 700;">${formatVND(p.price)}</span>
+                        </div>
+                    </a>
+                `;
+            });
+            sideSlideHtml += '</div><div class="latest-prdouct__slider__item">';
+            latestProducts.slice(3, 6).forEach(function(p) {
+                sideSlideHtml += `
+                    <a href="shop-details.html?id=${p.id}" class="latest-product__item">
+                        <div class="latest-product__item__pic" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid #eee; border-radius: 4px; padding: 4px;">
+                            <img src="${p.image}" alt="${p.name}" style="max-height: 70px; object-fit: contain;">
+                        </div>
+                        <div class="latest-product__item__text" style="padding-left: 12px;">
+                            <h6>${p.name}</h6>
+                            <span style="color: #ee1515; font-weight: 700;">${formatVND(p.price)}</span>
+                        </div>
+                    </a>
+                `;
+            });
+            sideSlideHtml += '</div>';
+            $("#sidebar-latest-products").html(sideSlideHtml);
+            $("#sidebar-latest-products").owlCarousel({
+                loop: true,
+                margin: 0,
+                items: 1,
+                dots: false,
+                nav: true,
+                navText: ["<span class='fa fa-angle-left'><span />", "<span class='fa fa-angle-right'><span />"]
+            });
+
+            // Hàm áp dụng bộ lọc và render
+            function applyFilterAndRender() {
+                var filtered = filterProducts(currentFilters);
+                $("#products-count-num").text(filtered.length);
+
+                // Render tags
+                renderActiveFilterTags();
+
+                if (filtered.length === 0) {
+                    $("#shop-products-grid").html(`
+                        <div class="col-lg-12 text-center" style="padding: 60px 20px;">
+                            <i class="fa fa-search" style="font-size: 50px; color: #ccc; margin-bottom: 15px;"></i>
+                            <h4 style="color: #555; margin-bottom: 10px;">Không tìm thấy sản phẩm nào phù hợp!</h4>
+                            <p style="color: #888;">Thử thay đổi từ khoá, nới rộng khoảng giá hoặc chọn danh mục khác.</p>
+                            <button type="button" class="site-btn" onclick="resetAllFilters()" style="margin-top: 10px;">XÓA TẤT CẢ BỘ LỌC</button>
+                        </div>
+                    `);
+                    $("#shop-pagination").empty();
+                    return;
+                }
+
+                // Phân trang
+                var totalPages = Math.ceil(filtered.length / currentFilters.pageSize);
+                if (currentFilters.page > totalPages) currentFilters.page = 1;
+
+                var startIndex = (currentFilters.page - 1) * currentFilters.pageSize;
+                var pageItems = filtered.slice(startIndex, startIndex + currentFilters.pageSize);
+
+                var gridHtml = "";
+                pageItems.forEach(function(p) {
+                    gridHtml += renderProductCard(p, "col-lg-4 col-md-6 col-sm-6");
+                });
+                $("#shop-products-grid").html(gridHtml);
+
+                // Render pagination
+                var pagHtml = "";
+                if (totalPages > 1) {
+                    if (currentFilters.page > 1) {
+                        pagHtml += `<a href="javascript:void(0)" class="page-num-btn" data-page="${currentFilters.page - 1}" style="margin: 0 3px; display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border: 1px solid #b2b2b2; font-weight: 700; border-radius: 4px; color: #6f6f6f;"><i class="fa fa-long-arrow-left"></i></a>`;
+                    }
+                    var startPage = Math.max(1, currentFilters.page - 2);
+                    var endPage = Math.min(totalPages, currentFilters.page + 2);
+                    if (startPage > 1) {
+                        pagHtml += `<a href="javascript:void(0)" class="page-num-btn" data-page="1" style="margin: 0 3px; display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border: 1px solid #b2b2b2; font-weight: 700; border-radius: 4px; color: #6f6f6f;">1</a>`;
+                        if (startPage > 2) pagHtml += `<span style="margin: 0 4px; color: #888;">...</span>`;
+                    }
+                    for (var i = startPage; i <= endPage; i++) {
+                        pagHtml += `<a href="javascript:void(0)" class="page-num-btn ${i === currentFilters.page ? 'active' : ''}" data-page="${i}" style="margin: 0 3px; display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border: 1px solid #b2b2b2; font-weight: 700; border-radius: 4px; ${i === currentFilters.page ? 'background: #7fad39; color: #fff; border-color: #7fad39;' : 'color: #6f6f6f;'}">${i}</a>`;
+                    }
+                    if (endPage < totalPages) {
+                        if (endPage < totalPages - 1) pagHtml += `<span style="margin: 0 4px; color: #888;">...</span>`;
+                        pagHtml += `<a href="javascript:void(0)" class="page-num-btn" data-page="${totalPages}" style="margin: 0 3px; display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border: 1px solid #b2b2b2; font-weight: 700; border-radius: 4px; color: #6f6f6f;">${totalPages}</a>`;
+                    }
+                    if (currentFilters.page < totalPages) {
+                        pagHtml += `<a href="javascript:void(0)" class="page-num-btn" data-page="${currentFilters.page + 1}" style="margin: 0 3px; display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border: 1px solid #b2b2b2; font-weight: 700; border-radius: 4px; color: #6f6f6f;"><i class="fa fa-long-arrow-right"></i></a>`;
+                    }
+                }
+                $("#shop-pagination").html(pagHtml);
+            }
+
+            function renderActiveFilterTags() {
+                var tags = [];
+                if (currentFilters.keyword) {
+                    tags.push(`Từ khoá: "${currentFilters.keyword}" <span onclick="removeFilter('keyword')">&times;</span>`);
+                }
+                if (currentFilters.generation && currentFilters.generation !== "all") {
+                    tags.push(`Thế hệ: ${currentFilters.generation} <span onclick="removeFilter('generation')">&times;</span>`);
+                }
+                if (currentFilters.rarity && currentFilters.rarity !== "all") {
+                    tags.push(`Độ hiếm: ${currentFilters.rarity} <span onclick="removeFilter('rarity')">&times;</span>`);
+                }
+                if (currentFilters.set && currentFilters.set !== "all") {
+                    tags.push(`Bộ: ${currentFilters.set} <span onclick="removeFilter('set')">&times;</span>`);
+                }
+                if (currentFilters.minPrice > 0 || currentFilters.maxPrice < 40000000) {
+                    tags.push(`Giá: ${formatVND(currentFilters.minPrice)} - ${formatVND(currentFilters.maxPrice)} <span onclick="removeFilter('price')">&times;</span>`);
+                }
+
+                if (tags.length > 0) {
+                    var html = '<div style="margin-bottom: 15px;"><strong>Đang lọc theo: </strong>';
+                    tags.forEach(function(t) {
+                        html += `<div class="filter-active-tag">${t}</div>`;
+                    });
+                    html += ` <a href="javascript:void(0)" onclick="resetAllFilters()" style="font-size: 13px; color: #ee1515; margin-left: 10px; font-weight: 600;">[Xoá tất cả]</a></div>`;
+                    $("#active-filter-tags").html(html);
+                } else {
+                    $("#active-filter-tags").empty();
+                }
+            }
+
+            window.removeFilter = function(type) {
+                if (type === "keyword") currentFilters.keyword = "";
+                if (type === "generation") {
+                    currentFilters.generation = "all";
+                    $(".filter-gen").removeClass("active");
+                    $('.filter-gen[data-gen="all"]').addClass("active");
+                }
+                if (type === "rarity") {
+                    currentFilters.rarity = "all";
+                    $(".filter-rarity").removeClass("active");
+                    $('.filter-rarity[data-rarity="all"]').addClass("active");
+                }
+                if (type === "set") {
+                    currentFilters.set = "all";
+                    $("input[name='set-radio'][value='all']").prop("checked", true);
+                    $(".sidebar__item__size label").removeClass("active");
+                    $("label[for='set-all']").addClass("active");
+                }
+                if (type === "price") {
+                    currentFilters.minPrice = 0;
+                    currentFilters.maxPrice = 40000000;
+                    $("#price-slider").slider("values", [0, 40000000]);
+                    $("#minamount").text("0đ");
+                    $("#maxamount").text("40.000.000đ");
+                }
+                currentFilters.page = 1;
+                applyFilterAndRender();
+            };
+
+            window.resetAllFilters = function() {
+                currentFilters.keyword = "";
+                currentFilters.generation = "all";
+                currentFilters.rarity = "all";
+                currentFilters.set = "all";
+                currentFilters.minPrice = 0;
+                currentFilters.maxPrice = 40000000;
+                currentFilters.sortBy = "default";
+                currentFilters.page = 1;
+
+                $(".filter-gen").removeClass("active");
+                $('.filter-gen[data-gen="all"]').addClass("active");
+
+                $(".filter-rarity").removeClass("active");
+                $('.filter-rarity[data-rarity="all"]').addClass("active");
+
+                $("input[name='set-radio'][value='all']").prop("checked", true);
+                $(".sidebar__item__size label").removeClass("active");
+                $("label[for='set-all']").addClass("active");
+
+                $("#price-slider").slider("values", [0, 40000000]);
+                $("#minamount").text("0đ");
+                $("#maxamount").text("40.000.000đ");
+
+                $("#sort-by-select").val("default").niceSelect('update');
+
+                applyFilterAndRender();
+            };
+
+            // Click sự kiện chuyển trang
+            $(document).on("click", ".page-num-btn", function() {
+                var p = $(this).data("page");
+                currentFilters.page = Number(p);
+                applyFilterAndRender();
+                $('html, body').animate({ scrollTop: $(".filter__item").offset().top - 20 }, 300);
+            });
+
+            // Click lọc thế hệ (Gen)
+            $(".filter-gen").click(function(e) {
+                e.preventDefault();
+                $(".filter-gen").removeClass("active");
+                $(this).addClass("active");
+                currentFilters.generation = $(this).data("gen");
+                currentFilters.page = 1;
+                applyFilterAndRender();
+            });
+
+            // Click lọc độ hiếm
+            $(".filter-rarity").click(function(e) {
+                e.preventDefault();
+                $(".filter-rarity").removeClass("active");
+                $(this).addClass("active");
+                currentFilters.rarity = $(this).data("rarity");
+                currentFilters.page = 1;
+                applyFilterAndRender();
+            });
+
+            // Click lọc Set
+            $("input[name='set-radio']").change(function() {
+                $(".sidebar__item__size label").removeClass("active");
+                $(this).closest("label").addClass("active");
+                currentFilters.set = $(this).val();
+                currentFilters.page = 1;
+                applyFilterAndRender();
+            });
+
+            // Change sắp xếp
+            $("#sort-by-select").change(function() {
+                currentFilters.sortBy = $(this).val();
+                currentFilters.page = 1;
+                applyFilterAndRender();
+            });
+
+            // Nút reset
+            $("#btn-reset-filters").click(function() {
+                resetAllFilters();
+            });
+
+            // Set initial generation from URL
+            if (currentFilters.generation && currentFilters.generation !== "all") {
+                $(".filter-gen").removeClass("active");
+                $(`.filter-gen[data-gen="${currentFilters.generation}"]`).addClass("active");
+            }
+
+            // Set initial rarity from URL
+            if (currentFilters.rarity && currentFilters.rarity !== "all") {
+                $(".filter-rarity").removeClass("active");
+                $(`.filter-rarity[data-rarity="${currentFilters.rarity}"]`).addClass("active");
+            }
+            if (currentFilters.set && currentFilters.set !== "all") {
+                $(`input[name='set-radio'][value="${currentFilters.set}"]`).prop("checked", true);
+                $(".sidebar__item__size label").removeClass("active");
+                $(`input[name='set-radio'][value="${currentFilters.set}"]`).closest("label").addClass("active");
+            }
+
+            // Chạy lần đầu
+            applyFilterAndRender();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MINH CARDS - Thanh toán đơn hàng">
+    <meta name="keywords" content="Pokemon, Thẻ bài Pokemon, Thanh toán, Checkout">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thanh Toán | MINH CARDS</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="index.html"><img src="Images/logo.png" alt="MINH CARDS"></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="wishlist.html"><i class="fa fa-heart"></i> <span class="header-wishlist-count">0</span></a></li>
+                <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="header-cart-count">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng: <span class="header-cart-price-total">0đ</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="Images/language.png" alt="VN">
+                <div>Tiếng Việt</div>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="login.html"><i class="fa fa-user"></i> Đăng nhập</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="shop-grid.html">Cửa hàng</a></li>
+                <li class="active"><a href="#">Trang</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="shop-details.html?id=1">Chi tiết thẻ bài</a></li>
+                        <li><a href="shoping-cart.html">Giỏ hàng</a></li>
+                        <li><a href="checkout.html">Thanh toán</a></li>
+                        <li><a href="orders.html">Lịch sử đơn hàng</a></li>
+                        <li><a href="wishlist.html">Yêu thích</a></li>
+                        <li><a href="blog-details.html?id=1">Chi tiết blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> huynhminh2007tgdd@gmail.com</li>
+                                <li>Miễn phí vận chuyển cho đơn từ 500.000đ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="Images/language.png" alt="VN">
+                                <div>Tiếng Việt</div>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="login.html"><i class="fa fa-user"></i> Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="Images/logo.png" alt="MINH CARDS"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="shop-grid.html">Cửa hàng</a></li>
+                            <li class="active"><a href="#">Trang</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="shop-details.html?id=1">Chi tiết thẻ bài</a></li>
+                                    <li><a href="shoping-cart.html">Giỏ hàng</a></li>
+                                    <li><a href="checkout.html">Thanh toán</a></li>
+                                    <li><a href="orders.html">Lịch sử đơn hàng</a></li>
+                                    <li><a href="wishlist.html">Yêu thích</a></li>
+                                    <li><a href="blog-details.html?id=1">Chi tiết blog</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="wishlist.html"><i class="fa fa-heart"></i> <span class="header-wishlist-count">0</span></a></li>
+                            <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="header-cart-count">0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Tổng: <span class="header-cart-price-total">0đ</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="Images/breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Thanh Toán Đơn Hàng</h2>
+                        <div class="breadcrumb__option">
+                            <a href="index.html">Trang chủ</a>
+                            <a href="shoping-cart.html">Giỏ hàng</a>
+                            <span>Thanh toán</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+            <!-- Thông báo đăng nhập nếu chưa có session -->
+            <div class="row" id="auth-notice-row">
+                <div class="col-lg-12">
+                    <h6><span class="fa fa-tag"></span> Bạn đã có tài khoản Collector? <a href="login.html?redirect=checkout.html">Bấm vào đây để đăng nhập</a> và theo dõi đơn hàng dễ dàng hơn.</h6>
+                </div>
+            </div>
+
+            <div class="checkout__form">
+                <h4>Thông Tin Giao Hàng & Đơn Hàng</h4>
+                <form id="checkout-form">
+                    <div class="row">
+                        <!-- Cột form thông tin khách hàng -->
+                        <div class="col-lg-8 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="checkout__input">
+                                        <p>Họ và tên người nhận<span>*</span></p>
+                                        <input type="text" id="order-fullname" placeholder="Nguyễn Văn A" required>
+                                        <small class="text-danger" id="err-fullname"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Số điện thoại liên hệ<span>*</span></p>
+                                        <input type="tel" id="order-phone" placeholder="0947546292" required>
+                                        <small class="text-danger" id="err-phone"></small>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Địa chỉ Email<span>*</span></p>
+                                        <input type="email" id="order-email" placeholder="example@email.com" required>
+                                        <small class="text-danger" id="err-email"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Địa chỉ giao hàng chi tiết (Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành)<span>*</span></p>
+                                <input type="text" id="order-address" placeholder="450 Lê Văn Việt, Phường Tăng Nhơn Phú A, TP. Thủ Đức, TP.HCM" required>
+                                <small class="text-danger" id="err-address"></small>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Ghi chú đơn hàng (Tuỳ chọn)</p>
+                                <input type="text" id="order-note" placeholder="Ví dụ: Bọc toploader cứng chống gãy, giao hàng giờ hành chính...">
+                            </div>
+                        </div>
+
+                        <!-- Cột tóm tắt đơn hàng bên phải -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="checkout__order" style="background: #f5f5f5; padding: 30px; border-radius: 6px;">
+                                <h4>Đơn Hàng Của Bạn</h4>
+                                <div class="checkout__order__products">Sản phẩm <span>Thành tiền</span></div>
+                                <ul id="checkout-order-items" style="list-style: none; padding: 0; margin-bottom: 20px;">
+                                    <!-- JS Render items -->
+                                </ul>
+                                <div class="checkout__order__subtotal">Tạm tính <span id="checkout-subtotal">0đ</span></div>
+                                <div class="checkout__order__subtotal" id="checkout-discount-row" style="display: none; color: #7fad39;">
+                                    Giảm giá <span id="checkout-discount">0đ</span>
+                                </div>
+                                <div class="checkout__order__total">Tổng cộng <span id="checkout-total" style="color: #ee1515;">0đ</span></div>
+
+                                <div class="checkout__input__checkbox" style="margin-top: 25px;">
+                                    <label for="payment-cod">
+                                        Thanh toán khi nhận hàng (COD)
+                                        <input type="radio" id="payment-cod" name="paymentMethod" value="COD" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <p style="font-size: 13px; color: #666; margin-left: 28px; margin-top: -10px; margin-bottom: 15px;">
+                                    Kiểm tra hàng trước khi thanh toán. Đóng hộp niêm phong PokéCard.
+                                </p>
+
+                                <div class="checkout__input__checkbox">
+                                    <label for="payment-bank">
+                                        Chuyển khoản / Quét mã QR (Mô phỏng)
+                                        <input type="radio" id="payment-bank" name="paymentMethod" value="BANK">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div id="bank-qr-box" style="display: none; background: #fff; border: 1px dashed #7fad39; padding: 15px; border-radius: 4px; margin-bottom: 20px; font-size: 13px;">
+                                    <p style="margin: 0; font-weight: 700; color: #333;">Ngân hàng: MB Bank</p>
+                                    <p style="margin: 0;">Số tài khoản: <strong>0947546292</strong></p>
+                                    <p style="margin: 0;">Chủ TK: <strong>MINH CARDS</strong></p>
+                                    <p style="margin: 0; color: #ee1515;">Nội dung: Mã đơn hàng</p>
+                                </div>
+
+                                <button type="submit" class="site-btn" style="width: 100%; padding: 15px 30px; font-weight: 700; font-size: 16px;">
+                                    XÁC NHẬN ĐẶT HÀNG
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Checkout Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="index.html"><img src="Images/logo.png" alt="MINH CARDS"></a>
+                        </div>
+                        <ul>
+                            <li><strong>Địa chỉ:</strong> 450 Lê Văn Việt, Tăng Nhơn Phú A, TP. Thủ Đức, TP.HCM</li>
+                            <li><strong>Điện thoại:</strong> +84 947.546.292</li>
+                            <li><strong>Email:</strong> huynhminh2007tgdd@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Liên kết hữu ích</h6>
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="shop-grid.html">Cửa hàng thẻ bài</a></li>
+                            <li><a href="blog.html">Tin tức & Mẹo chơi</a></li>
+                            <li><a href="contact.html">Liên hệ hỗ trợ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Đăng ký nhận tin tức</h6>
+                        <form onsubmit="event.preventDefault(); showToast('Cảm ơn bạn đã đăng ký!', 'success'); this.reset();">
+                            <input type="email" placeholder="Nhập email của bạn" required>
+                            <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                                                <div class="footer__copyright__text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true" style="color: #ee1515;"></i> by Việt Minh</p>
+                        </div>
+                        <div class="footer__copyright__payment"><img src="Images/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <!-- PokéCard Scripts -->
+    <script src="Scripts/data.js"></script>
+    <script src="Scripts/auth.js"></script>
+    <script src="Scripts/cart.js"></script>
+    <script src="Scripts/wishlist.js"></script>
+    <script src="Scripts/products.js"></script>
+    <script src="Scripts/orders.js"></script>
+    <script src="Scripts/ui.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#preloder").fadeOut();
+            $(".loader").fadeOut();
+
+            $(".mobile-menu").slicknav({
+                prependTo: '#mobile-menu-wrap',
+                allowParentLinks: true
+            });
+
+            // Kiểm tra giỏ hàng
+            var totals = getCartTotals();
+            if (!totals.cart || totals.cart.length === 0) {
+                alert("Giỏ hàng của bạn đang trống! Vui lòng chọn sản phẩm trước khi thanh toán.");
+                window.location.href = "shop-grid.html";
+                return;
+            }
+
+            // Tự động điền thông tin nếu đã đăng nhập
+            var user = getCurrentUser();
+            if (user) {
+                $("#auth-notice-row").html(`
+                    <div class="col-lg-12">
+                        <div style="background: #e8f5e9; border: 1px solid #c8e6c9; padding: 12px 20px; border-radius: 4px; margin-bottom: 25px; color: #2e7d32; font-weight: 600;">
+                            <i class="fa fa-user-circle"></i> Đang thanh toán với tài khoản: <strong>${user.name}</strong> (${user.email})
+                        </div>
+                    </div>
+                `);
+                $("#order-fullname").val(user.name);
+                $("#order-email").val(user.email);
+            }
+
+            // Render tóm tắt đơn hàng
+            var itemsHtml = "";
+            totals.cart.forEach(function (item) {
+                var itemSubtotal = item.price * item.quantity;
+                itemsHtml += `
+                    <li style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; color: #444;">
+                        <span style="max-width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${item.name} <strong>x ${item.quantity}</strong></span>
+                        <span style="font-weight: 600;">${formatVND(itemSubtotal)}</span>
+                    </li>
+                `;
+            });
+            $("#checkout-order-items").html(itemsHtml);
+            $("#checkout-subtotal").text(formatVND(totals.subtotal));
+
+            if (totals.discountAmount > 0) {
+                $("#checkout-discount-row").show();
+                $("#checkout-discount").text("-" + formatVND(totals.discountAmount));
+            }
+            $("#checkout-total").text(formatVND(totals.finalTotal));
+
+            // Toggle QR ngân hàng khi chọn phương thức
+            $("input[name='paymentMethod']").change(function () {
+                if ($(this).val() === "BANK") {
+                    $("#bank-qr-box").slideDown();
+                } else {
+                    $("#bank-qr-box").slideUp();
+                }
+            });
+
+            // Xử lý submit đặt hàng
+            $("#checkout-form").submit(function (e) {
+                e.preventDefault();
+
+                // Yêu cầu đăng nhập trước khi đặt hàng
+                if (!getCurrentUser()) {
+                    showToast("Bạn cần đăng nhập tài khoản để tiến hành đặt hàng!", "warning");
+                    setTimeout(function () {
+                        window.location.href = "login.html?redirect=checkout.html";
+                    }, 1200);
+                    return;
+                }
+
+                var orderData = {
+                    fullName: $("#order-fullname").val(),
+                    phone: $("#order-phone").val(),
+                    address: $("#order-address").val(),
+                    note: $("#order-note").val(),
+                    paymentMethod: $("input[name='paymentMethod']:checked").val()
+                };
+
+                // Gọi hàm tạo đơn
+                var res = createOrder(orderData);
+                if (res.success) {
+                    showToast(`Đặt hàng thành công! Mã đơn: ${res.order.id}`, "success");
+                    updateHeaderCartBadge();
+                    setTimeout(function () {
+                        window.location.href = `orders.html?new_order=${res.order.id}`;
+                    }, 1000);
+                } else {
+                    if (res.errors) {
+                        if (res.errors.fullName) $("#err-fullname").text(res.errors.fullName);
+                        if (res.errors.phone) $("#err-phone").text(res.errors.phone);
+                        if (res.errors.address) $("#err-address").text(res.errors.address);
+                    }
+                    if (res.message) {
+                        showToast(res.message, "error");
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
